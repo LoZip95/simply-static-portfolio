@@ -1,5 +1,39 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'Inter';
+    src: url('./../../public/fonts/Inter-Regular.ttf') format('truetype'); 
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./../../public/fonts/Inter-Bold.ttf') format('truetype'); 
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./../../public/fonts/Inter-Light.ttf') format('truetype'); 
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap; 
+}
+
 body {
-     background-color: ghostwhite;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    background-image: url('./../../public/images/Hexagon.svg');
+}
+
+.icon-link{
+    @apply p-1.5 border-2 border-black rounded-full;
+}
+
+.icon-link:hover {
+    @apply bg-yellow-200;
 }

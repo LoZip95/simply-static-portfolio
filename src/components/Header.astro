@@ -1,0 +1,43 @@
+---
+import { Linkedin, Github, Instagram } from "@lucide/astro";
+---
+
+<header class="bg-blue-400 py-8 px-4 rounded-b-2xl shadow-2xl">
+    <div
+        class="bg-white shadow-2xl mx-auto p-12 rounded-2xl w-full lg:w-1/3 border-black border-2"
+    >
+        <h1 class="text-3xl mb-4 font-bold">Lorenzo Zippilli</h1>
+        <nav class="flex flex-row gap-2.5 mt-6">
+            <a
+                href="https://www.linkedin.com/in/lorenzo-zippilli/"
+                class="icon-link"
+                title="Profilo LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profilo LinkedIn"
+            >
+                <Linkedin size={20} />
+            </a>
+            <a
+                href="https://github.com/LoZip95"
+                class="icon-link"
+                title="Profilo GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profilo GitHub"
+            >
+                <Github size={20} />
+            </a>
+            <a
+                href="https://www.instagram.com/lorenzo_0x7cb/"
+                class="icon-link"
+                title="Profilo Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profilo Instagram"
+            >
+                <Instagram size={20} />
+            </a>
+        </nav>
+    </div>
+</header>
